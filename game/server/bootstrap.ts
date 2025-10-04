@@ -30,7 +30,7 @@ eventController<RequestUploadToken, string>(
         filename: body ? body.filename : undefined,
         encoding: body.encoding,
         headers: body.headers,
-        formField: 'file',
+        formField: body.formField,
       },
       url: body.url,
       dataType: 'blob',
